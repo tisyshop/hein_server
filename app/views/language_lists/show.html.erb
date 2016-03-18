@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @language_list.code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @language_list.name %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @language_list.flag %>
+</p>
+
+<%= link_to 'Edit', edit_language_list_path(@language_list) %> |
+<%= link_to 'Back', language_lists_path %>
