@@ -5,9 +5,15 @@ one:
   skpUsername: MyString
   picture: MyString
   description: MyString
+  password: MyString
+  created_at: 2016-03-21
+  updated_at: 2016-03-21
 
 two:
   username: MyString
   skpUsername: MyString
   picture: MyString
   description: MyString
+  password: MyString
+  created_at: 2016-03-21
+  updated_at: 2016-03-21

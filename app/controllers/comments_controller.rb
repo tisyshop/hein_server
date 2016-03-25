@@ -69,6 +69,6 @@ class CommentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comment_params
-      params.require(:comment).permit(:content, :CreationDate, :lastUpdated)
+      params.require(:comment).permit(:content, :skpUsername, :created_at, :updated_at, :user_id)
     end
 end

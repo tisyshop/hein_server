@@ -18,7 +18,7 @@ class LanguageListsControllerTest < ActionController::TestCase
 
   test "should create language_list" do
     assert_difference('LanguageList.count') do
-      post :create, language_list: { code: @language_list.code, flag: @language_list.flag, name: @language_list.name }
+      post :create, language_list: { code: @language_list.code, created_at: @language_list.created_at, flag: @language_list.flag, learnedLanguage: @language_list.learnedLanguage, mothertongue: @language_list.mothertongue, name: @language_list.name, updated_at: @language_list.updated_at }
     end
 
     assert_redirected_to language_list_path(assigns(:language_list))
@@ -35,7 +35,7 @@ class LanguageListsControllerTest < ActionController::TestCase
   end
 
   test "should update language_list" do
-    patch :update, id: @language_list, language_list: { code: @language_list.code, flag: @language_list.flag, name: @language_list.name }
+    patch :update, id: @language_list, language_list: { code: @language_list.code, created_at: @language_list.created_at, flag: @language_list.flag, learnedLanguage: @language_list.learnedLanguage, mothertongue: @language_list.mothertongue, name: @language_list.name, updated_at: @language_list.updated_at }
     assert_redirected_to language_list_path(assigns(:language_list))
   end
 

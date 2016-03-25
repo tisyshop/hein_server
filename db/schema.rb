@@ -11,22 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160304224538) do
+ActiveRecord::Schema.define(version: 20160321214828) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "content"
-    t.date     "CreationDate"
-    t.date     "lastUpdated"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
 
   create_table "language_lists", force: :cascade do |t|
     t.string   "code"
     t.string   "name"
     t.string   "flag"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "language_lists_users", id: false, force: :cascade do |t|
+    t.integer "language_list_id"
+    t.integer "user_id"
+    t.boolean  "mothertongue"
+    t.boolean  "learnedLanguage"
   end
 
   create_table "users", force: :cascade do |t|
@@ -34,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160304224538) do
     t.string   "skpUsername"
     t.string   "picture"
     t.string   "description"
+    t.string   "password"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

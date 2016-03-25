@@ -4,7 +4,6 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    headers['Access-Control-Allow-Origin'] = '*'
     @users = User.all
   end
 
@@ -70,6 +69,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:username, :skpUsername, :picture, :description)
+      params.require(:user).permit(:username, :skpUsername, :picture, :description, :password, :created_at, :updated_at)
     end
 end

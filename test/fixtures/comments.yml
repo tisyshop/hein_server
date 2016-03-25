@@ -2,10 +2,14 @@
 
 one:
   content: MyString
-  CreationDate: 2016-03-04
-  lastUpdated: 2016-03-04
+  skpUsername: MyString
+  created_at: 2016-03-21
+  updated_at: 2016-03-21
+  user_id: 1
 
 two:
   content: MyString
-  CreationDate: 2016-03-04
-  lastUpdated: 2016-03-04
+  skpUsername: MyString
+  created_at: 2016-03-21
+  updated_at: 2016-03-21
+  user_id: 1

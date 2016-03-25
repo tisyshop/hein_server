@@ -23,6 +23,22 @@
     <%= f.label :flag %><br>
     <%= f.text_field :flag %>
   </div>
+  <div class="field">
+    <%= f.label :mothertongue %><br>
+    <%= f.check_box :mothertongue %>
+  </div>
+  <div class="field">
+    <%= f.label :learnedLanguage %><br>
+    <%= f.check_box :learnedLanguage %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br>
+    <%= f.date_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br>
+    <%= f.date_select :updated_at %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

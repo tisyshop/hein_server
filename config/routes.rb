@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   resources :comments
   resources :users
-  resources :comments
   resources :language_lists
+  resources :users
+  resources :language_lists
+  resources :comments
+  resources :comments
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

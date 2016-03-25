@@ -15,5 +15,25 @@
   <%= @language_list.flag %>
 </p>
 
+<p>
+  <strong>Mothertongue:</strong>
+  <%= @language_list.mothertongue %>
+</p>
+
+<p>
+  <strong>Learnedlanguage:</strong>
+  <%= @language_list.learnedLanguage %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @language_list.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @language_list.updated_at %>
+</p>
+
 <%= link_to 'Edit', edit_language_list_path(@language_list) %> |
 <%= link_to 'Back', language_lists_path %>

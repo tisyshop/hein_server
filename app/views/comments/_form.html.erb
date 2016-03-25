@@ -16,12 +16,20 @@
     <%= f.text_field :content %>
   </div>
   <div class="field">
-    <%= f.label :CreationDate %><br>
-    <%= f.date_select :CreationDate %>
+    <%= f.label :skpUsername %><br>
+    <%= f.text_field :skpUsername %>
   </div>
   <div class="field">
-    <%= f.label :lastUpdated %><br>
-    <%= f.date_select :lastUpdated %>
+    <%= f.label :created_at %><br>
+    <%= f.date_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br>
+    <%= f.date_select :updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

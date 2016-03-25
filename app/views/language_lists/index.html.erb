@@ -8,6 +8,10 @@
       <th>Code</th>
       <th>Name</th>
       <th>Flag</th>
+      <th>Mothertongue</th>
+      <th>Learnedlanguage</th>
+      <th>Created at</th>
+      <th>Updated at</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +22,10 @@
         <td><%= language_list.code %></td>
         <td><%= language_list.name %></td>
         <td><%= language_list.flag %></td>
+        <td><%= language_list.mothertongue %></td>
+        <td><%= language_list.learnedLanguage %></td>
+        <td><%= language_list.created_at %></td>
+        <td><%= language_list.updated_at %></td>
         <td><%= link_to 'Show', language_list %></td>
         <td><%= link_to 'Edit', edit_language_list_path(language_list) %></td>
         <td><%= link_to 'Destroy', language_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
