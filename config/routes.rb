@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :hobbies
   resources :comments
   resources :users
   resources :language_lists

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160321214828) do
+ActiveRecord::Schema.define(version: 20160328121433) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "content"
@@ -20,20 +20,23 @@ ActiveRecord::Schema.define(version: 20160321214828) do
     t.integer  "user_id"
   end
 
+  create_table "hobbies", force: :cascade do |t|
+    t.string   "label"
+    t.integer  "weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "language_lists", force: :cascade do |t|
     t.string   "code"
     t.string   "name"
     t.string   "flag"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "language_lists_users", id: false, force: :cascade do |t|
-    t.integer "language_list_id"
-    t.integer "user_id"
-    t.boolean  "mothertongue"
-    t.boolean  "learnedLanguage"
-  end
+# Could not dump table "language_lists_users" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
